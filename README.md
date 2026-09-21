@@ -10,7 +10,7 @@
 * Frank Alí López Jimenez
 
 **Enlaces de entrega:**
-* **Sitio web desplegado:** [A definir]
+* **Sitio web desplegado:** https://rmelisolansuade.github.io/Gastronomia-Barrio-Chino---Actividad-2---UADE/
 * **Prototipo interactivo:** [A definir]
 
 ---
