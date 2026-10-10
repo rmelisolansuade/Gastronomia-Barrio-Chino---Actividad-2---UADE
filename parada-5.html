@@ -1,71 +1,256 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/style.css">
-  <title>Parada 5 | GBC</title>
-  <link rel="icon" type="image/x-icon" href="./images/Logo GBC.svg">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Parada 5 | GBC</title>
+    <link rel="icon" type="image/x-icon" href="./images/Logo GBC.svg">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header class="w-full bg-stone-50 shadow-sm">
-    <nav class="mx-auto flex min-h-[72px] max-w-[1440px] flex-wrap items-center justify-between gap-x-8 gap-y-4 px-16 py-4">
-      <a href="./index.html#inicio" class="flex shrink-0 items-center gap-3 text-stone-800">
-        <img src="./images/Logo GBC.svg" alt="GBC" class="h-10 w-10 object-contain">
-        <span class="text-sm font-medium uppercase tracking-wider">Gastronomía<br>Barrio Chino</span>
-      </a>
-      <ul class="flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-sm font-semibold uppercase tracking-wide text-stone-700">
-        <li><a href="./index.html#recorrido" class="border-b-2 border-transparent pb-2">El recorrido</a></li>
-        <li><a href="./index.html#puntos-de-interes" class="border-b-2 border-transparent pb-2">Puntos de interés</a></li>
-        <li><a href="./index.html#mapa" class="border-b-2 border-transparent pb-2">Mapa interactivo</a></li>
-        <li><a href="./index.html#guia" class="border-b-2 border-transparent pb-2">Guía práctica</a></li>
-      </ul>
-      <a href="./index.html#recorrido" class="inline-flex items-center gap-2 rounded bg-amber-400 px-8 py-3 text-sm font-extrabold uppercase oswald-font">Comenzar el recorrido</a>
-    </nav>
-  </header>
-  <footer class="bg-red-950 text-sm text-red-200">
-    <div class="mx-auto max-w-[1440px] px-16 py-8">
-      <div class="flex flex-wrap gap-8 pb-8">
-        <div class="flex min-w-[200px] flex-[1_1_220px] flex-col gap-2">
-          <img src="./images/Logo GBC.svg" alt="GBC" class="h-9 w-9 rounded-sm bg-white p-1">
-          <p class="max-w-xs">El portal patrimonial y gastronómico oficial de la comunidad del Barrio Chino. Rutas auténticas, historias culinarias y curaduría callejera.</p>
+    <header class="w-full bg-stone-50 shadow-sm">
+        <nav
+            class="mx-auto flex min-h-[72px] max-w-[1440px] flex-wrap items-center justify-between gap-x-8 gap-y-4 px-16 py-4">
+            <a href="./index.html#inicio" class="flex shrink-0 items-center gap-3 text-stone-800">
+                <img src="./images/Logo GBC.svg" alt="GBC" class="h-10 w-10 object-contain">
+                <span class="text-sm font-medium uppercase tracking-wider">Gastronomía<br>Barrio Chino</span>
+            </a>
+            <ul
+                class="flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-sm font-semibold uppercase tracking-wide text-stone-700">
+                <li><a href="./index.html#recorrido" class="border-b-2 border-transparent pb-2">El recorrido</a></li>
+                <li><a href="./index.html#puntos-de-interes" class="border-b-2 border-transparent pb-2">Puntos de
+                        interés</a></li>
+                <li><a href="./index.html#mapa" class="border-b-2 border-transparent pb-2">Mapa interactivo</a></li>
+                <li><a href="./index.html#guia" class="border-b-2 border-transparent pb-2">Guía práctica</a></li>
+            </ul>
+            <a href="./index.html#recorrido"
+                class="inline-flex items-center gap-2 rounded bg-amber-400 px-8 py-3 text-sm font-extrabold uppercase oswald-font">Comenzar
+                el recorrido</a>
+        </nav>
+    </header>
+    <main>
+        <section class="mx-auto grid max-w-[1440px] items-center gap-8 px-16 py-10">
+            <div class="flex flex-col items-start gap-4">
+                <div class="flex gap-8">
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <p class="text-xs font-bold uppercase tracking-wide text-red-800">⊙ Punto 05 · Nocturno
+                                &amp; snacks</p>
+                            <h1 class="text-4xl font-extrabold uppercase leading-tight text-neutral-900 oswald-font">
+                                Matcha Corner &amp; pastelería de autor</h1>
+                        </div>
+                        <div class="max-w-4xl space-y-2 text-sm leading-5 text-neutral-800">
+                            <p>Cafetería de especialidad y salón de té para hacer una pausa antes de cerrar el paseo por
+                                el Barrio Chino. Su ambiente tranquilo invita a sentarse y disfrutar bebidas y algo
+                                dulce sin apuro. La carta reúne sabores clásicos y propuestas actuales, ideal para
+                                descansar y terminar el recorrido con algo rico.</p>
+                            <p>La propuesta combina bebidas de matcha, bubble tea y pastelería de inspiración asiática.
+                            </p>
+                            <p>Actividades: probar dulces asiáticos y bebidas, y descansar al final del recorrido.</p>
+                            <p>Horario: martes a domingo, de 12:00 a 22:00 hs.</p>
+                        </div>
+                    </div>
+                    <div class="h-[300px] w-[500px] rounded-lg bg-stone-300" role="img"
+                        aria-label="Espacio reservado para una foto de Matcha Corner"></div>
+                </div>
+                <ul class="grid w-full grid-cols-4 gap-2 text-sm">
+                    <li class="rounded bg-stone-200 px-3 py-2"><strong class="block text-red-800">05</strong><span
+                            class="text-xs uppercase">Punto</span></li>
+                    <li class="rounded bg-stone-200 px-3 py-2"><strong class="block text-red-800">Montañeses
+                            2000</strong><span class="text-xs uppercase">Ubicación</span></li>
+                    <li class="rounded bg-stone-200 px-3 py-2"><strong class="block text-red-800">20 min</strong><span
+                            class="text-xs uppercase">Duración</span></li>
+                    <li class="rounded bg-stone-200 px-3 py-2"><strong class="block text-yellow-900">$</strong><span
+                            class="text-xs uppercase">Nivel de precio</span></li>
+                </ul>
+            </div>
+        </section>
+        <section class="bg-stone-200 py-10">
+            <div class="mx-auto max-w-[1440px] px-16">
+                <div class="mb-6 flex items-end justify-between gap-4">
+                    <div>
+                        <p class="mb-1 text-xs font-bold uppercase tracking-wide text-red-800">⊙ Itinerario paso a paso
+                        </p>
+                        <h2 class="text-4xl font-extrabold uppercase leading-none text-neutral-900 oswald-font">Las 6
+                            paradas esenciales</h2>
+                    </div>
+                    <p class="max-w-sm text-end text-sm text-neutral-800">Un trayecto culinario de 1.8 km organizado
+                        para maximizar sabores, contrastes de texturas y digestión equilibrada.</p>
+                </div>
+                <div class="flex flex-wrap items-stretch justify-center gap-5">
+                    <article class="card flex flex-col overflow-hidden rounded-md bg-white shadow-md">
+                        <div class="relative aspect-[1.65] bg-stone-300"><span
+                                class="absolute left-2 top-2 rounded bg-red-800 px-2 py-1 text-xs font-bold uppercase text-white">Punto
+                                01 · Al paso</span><span
+                                class="absolute bottom-2 right-2 rounded bg-white/90 px-2 py-1 text-xs font-bold uppercase text-red-800">Estación
+                                Belgrano C</span></div>
+                        <div class="flex flex-1 flex-col px-3.5 py-2">
+                            <p class="mb-2 flex flex-wrap gap-x-3 text-xs text-stone-700">◷ 15 min <span
+                                    class="text-red-800">▣ $ Económico</span> ⌖ Arribeños 2100</p>
+                            <h3 class="text-lg font-extrabold uppercase text-neutral-900 oswald-font">Street Food Alley:
+                                baos y pinchos al paso</h3>
+                            <p class="mt-2 text-sm text-neutral-800">Puestos de comida rápida callejera asiática, con
+                                servicio de barra y mesas altas.</p>
+                            <div class="mt-auto pt-2">
+                                <p class="mb-2 rounded bg-stone-100 p-2 text-xs leading-4 text-neutral-800"><strong
+                                        class="font-bold uppercase text-red-800">Especialidad
+                                        recomendada:</strong><br>Dumplings de cerdo a la plancha y baozi al vapor.</p><a
+                                    href="./parada-1.html"
+                                    class="flex items-center justify-between rounded bg-amber-400 px-3 py-2 text-xs font-extrabold uppercase text-stone-900 oswald-font">Ver
+                                    más de la experiencia <span>→</span></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card flex flex-col overflow-hidden rounded-md bg-white shadow-md">
+                        <div class="relative aspect-[1.65] bg-stone-300"><span
+                                class="absolute left-2 top-2 rounded bg-red-800 px-2 py-1 text-xs font-bold uppercase text-white">Punto
+                                02 · Platos fuertes</span><span
+                                class="absolute bottom-2 right-2 rounded bg-white/90 px-2 py-1 text-xs font-bold uppercase text-red-800">Wok
+                                en vivo</span></div>
+                        <div class="flex flex-1 flex-col px-3.5 py-2">
+                            <p class="mb-2 flex flex-wrap gap-x-3 text-xs text-stone-700">◷ 35 min <span
+                                    class="text-red-800">▣ $$ Medio</span> ⌖ Pasaje Olazábal</p>
+                            <h3 class="text-lg font-extrabold uppercase text-neutral-900 oswald-font">Ramen &amp;
+                                Omakase Lab</h3>
+                            <p class="mt-2 text-sm text-neutral-800">Ramen, platos de cuchara y sushi preparado en el
+                                momento bajo las arcadas.</p>
+                            <div class="mt-auto pt-2">
+                                <p class="mb-2 rounded bg-stone-100 p-2 text-xs leading-4 text-neutral-800"><strong
+                                        class="font-bold uppercase text-red-800">Especialidad
+                                        recomendada:</strong><br>Chow mein al wok y pato laqueado.</p><a
+                                    href="./parada-2.html"
+                                    class="flex items-center justify-between rounded bg-amber-400 px-3 py-2 text-xs font-extrabold uppercase text-stone-900 oswald-font">Ver
+                                    más de la experiencia <span>→</span></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card flex flex-col overflow-hidden rounded-md bg-white shadow-md">
+                        <div class="relative aspect-[1.65] bg-stone-300"><span
+                                class="absolute left-2 top-2 rounded bg-red-800 px-2 py-1 text-xs font-bold uppercase text-white">Punto
+                                03 · Ceremonia &amp; tapeo</span><span
+                                class="absolute bottom-2 right-2 rounded bg-white/90 px-2 py-1 text-xs font-bold uppercase text-red-800">Té
+                                oolong</span></div>
+                        <div class="flex flex-1 flex-col px-3.5 py-2">
+                            <p class="mb-2 flex flex-wrap gap-x-3 text-xs text-stone-700">◷ 45 min <span
+                                    class="text-red-800">▣ $$$ Premium</span> ⌖ Mendoza 1600</p>
+                            <h3 class="text-lg font-extrabold uppercase text-neutral-900 oswald-font">Under-rail Izakaya
+                                &amp; Cocktail Bar</h3>
+                            <p class="mt-2 text-sm text-neutral-800">Cantina japonesa bajo el viaducto, con platos para
+                                compartir y cócteles.</p>
+                            <div class="mt-auto pt-2">
+                                <p class="mb-2 rounded bg-stone-100 p-2 text-xs leading-4 text-neutral-800"><strong
+                                        class="font-bold uppercase text-red-800">Especialidad
+                                        recomendada:</strong><br>Xiaolongbao, har gow y té oolong.</p><a
+                                    href="./parada-3.html"
+                                    class="flex items-center justify-between rounded bg-amber-400 px-3 py-2 text-xs font-extrabold uppercase text-stone-900 oswald-font">Ver
+                                    más de la experiencia <span>→</span></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card flex flex-col overflow-hidden rounded-md bg-white shadow-md">
+                        <div class="relative aspect-[1.65] bg-stone-300"><span
+                                class="absolute left-2 top-2 rounded bg-red-800 px-2 py-1 text-xs font-bold uppercase text-white">Punto
+                                04 · Experiencia compartida</span><span
+                                class="absolute bottom-2 right-2 rounded bg-white/90 px-2 py-1 text-xs font-bold uppercase text-red-800">Caldero
+                                mongol</span></div>
+                        <div class="flex flex-1 flex-col px-3.5 py-2">
+                            <p class="mb-2 flex flex-wrap gap-x-3 text-xs text-stone-700">◷ 60 min <span
+                                    class="text-red-800">▣ $$$ Premium</span> ⌖ Arribeños 2250</p>
+                            <h3 class="text-lg font-extrabold uppercase text-neutral-900 oswald-font">K-Food &amp; Asian
+                                Pop Culture</h3>
+                            <p class="mt-2 text-sm text-neutral-800">Sabores coreanos, cultura pop asiática y platos
+                                para compartir.</p>
+                            <div class="mt-auto pt-2">
+                                <p class="mb-2 rounded bg-stone-100 p-2 text-xs leading-4 text-neutral-800"><strong
+                                        class="font-bold uppercase text-red-800">Especialidad
+                                        recomendada:</strong><br>Pollo frito coreano y caldo picante de Sichuan.</p><a
+                                    href="./parada-4.html"
+                                    class="flex items-center justify-between rounded bg-amber-400 px-3 py-2 text-xs font-extrabold uppercase text-stone-900 oswald-font">Ver
+                                    más de la experiencia <span>→</span></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card flex flex-col overflow-hidden rounded-md bg-white shadow-md">
+                        <div class="relative aspect-[1.65] bg-stone-300"><span
+                                class="absolute left-2 top-2 rounded bg-red-800 px-2 py-1 text-xs font-bold uppercase text-white">Punto
+                                05 · Nocturno &amp; snacks</span><span
+                                class="absolute bottom-2 right-2 rounded bg-white/90 px-2 py-1 text-xs font-bold uppercase text-red-800">Matcha
+                                y té</span></div>
+                        <div class="flex flex-1 flex-col px-3.5 py-2">
+                            <p class="mb-2 flex flex-wrap gap-x-3 text-xs text-stone-700">◷ 20 min <span
+                                    class="text-red-800">▣ $ Económico</span> ⌖ Montañeses 2000</p>
+                            <h3 class="text-lg font-extrabold uppercase text-neutral-900 oswald-font">Matcha Corner
+                                &amp; pastelería de autor</h3>
+                            <p class="mt-2 text-sm text-neutral-800">Cafetería de especialidad y salón de té para cerrar
+                                el paseo con algo dulce.</p>
+                            <div class="mt-auto pt-2">
+                                <p class="mb-2 rounded bg-stone-100 p-2 text-xs leading-4 text-neutral-800"><strong
+                                        class="font-bold uppercase text-red-800">Especialidad
+                                        recomendada:</strong><br>Matcha, mochi y bubble tea de taro.</p><a
+                                    href="./parada-5.html"
+                                    class="flex items-center justify-between rounded bg-amber-400 px-3 py-2 text-xs font-extrabold uppercase text-stone-900 oswald-font">Ver
+                                    más de la experiencia <span>→</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-red-950 text-sm text-red-200">
+        <div class="mx-auto max-w-[1440px] px-16 py-8">
+            <div class="flex flex-wrap gap-8 pb-8">
+                <div class="flex min-w-[200px] flex-[1_1_220px] flex-col gap-2">
+                    <img src="./images/Logo GBC.svg" alt="GBC" class="h-9 w-9 rounded-sm bg-white p-1">
+                    <p class="max-w-xs">El portal patrimonial y gastronómico oficial de la comunidad del Barrio Chino.
+                        Rutas auténticas, historias culinarias y curaduría callejera.</p>
+                </div>
+                <div class="min-w-[150px] flex-[1_1_150px]">
+                    <h2 class="mb-2 font-extrabold uppercase tracking-wide oswald-font">Accesos rápidos</h2>
+                    <ul class="space-y-2 p-0">
+                        <li><a href="./index.html#recorrido">› El recorrido paso a paso</a></li>
+                        <li><a href="./index.html#puntos-de-interes">› Mapa de puestos callejeros</a></li>
+                        <li><a href="./index.html#mapa">› Mapa urbano</a></li>
+                        <li><a href="./index.html#guia">› Guía práctica</a></li>
+                    </ul>
+                </div>
+                <div class="min-w-[180px] flex-[1_1_180px]">
+                    <h2 class="mb-2 font-extrabold uppercase tracking-wide oswald-font">Cómo llegar</h2>
+                    <p class="mb-1 font-bold text-amber-300">▣ Tren Mitre:</p>
+                    <p class="mb-2">Estación Belgrano C (a 50 metros del Arco).</p>
+                    <p class="mb-1 font-bold text-amber-300">▣ Subte Línea D:</p>
+                    <p class="mb-2">Estación Juramento (caminata de 600 m).</p>
+                    <p class="mb-1 font-bold text-amber-300">▣ Colectivos:</p>
+                    <p>Líneas 15, 29, 42, 44, 60, 64, 80, 114, 118 y 130.</p>
+                </div>
+                <div class="min-w-[180px] flex-[1_1_180px]">
+                    <h2 class="mb-2 font-extrabold uppercase tracking-wide oswald-font">Horarios recomendados</h2>
+                    <p class="mb-1 font-bold text-amber-300">Mercados &amp; Locales:</p>
+                    <p class="mb-2">Martes a Domingo: 09:30 - 20:30 hs.</p>
+                    <p class="mb-1 font-bold text-amber-300">Puestos Callejeros y Snacks:</p>
+                    <p class="mb-2">Viernes a Domingo: 11:30 - 22:30 hs.</p>
+                    <p><span class="text-amber-300">◷</span> Lunes cerrado por reposición general.</p>
+                </div>
+            </div>
+            <div class="flex flex-row justify-between gap-2 border-t border-white/15 pt-4">
+                <p>© 2026 Gastronomía Barrio Chino (GBC). Todos los derechos reservados.</p>
+                <p>Proyecto realizado por Grupo 2 · UADE</p>
+            </div>
         </div>
-        <div class="min-w-[150px] flex-[1_1_150px]">
-          <h2 class="mb-2 font-extrabold uppercase tracking-wide oswald-font">Accesos rápidos</h2>
-          <ul class="space-y-2 p-0">
-            <li><a href="./index.html#recorrido">› El recorrido paso a paso</a></li>
-            <li><a href="./index.html#puntos-de-interes">› Mapa de puestos callejeros</a></li>
-            <li><a href="./index.html#mapa">› Mapa urbano</a></li>
-            <li><a href="./index.html#guia">› Guía práctica</a></li>
-          </ul>
-        </div>
-        <div class="min-w-[180px] flex-[1_1_180px]">
-          <h2 class="mb-2 font-extrabold uppercase tracking-wide oswald-font">Cómo llegar</h2>
-          <p class="mb-1 font-bold text-amber-300">▣ Tren Mitre:</p>
-          <p class="mb-2">Estación Belgrano C (a 50 metros del Arco).</p>
-          <p class="mb-1 font-bold text-amber-300">▣ Subte Línea D:</p>
-          <p class="mb-2">Estación Juramento (caminata de 600 m).</p>
-          <p class="mb-1 font-bold text-amber-300">▣ Colectivos:</p>
-          <p>Líneas 15, 29, 42, 44, 60, 64, 80, 114, 118 y 130.</p>
-        </div>
-        <div class="min-w-[180px] flex-[1_1_180px]">
-          <h2 class="mb-2 font-extrabold uppercase tracking-wide oswald-font">Horarios recomendados</h2>
-          <p class="mb-1 font-bold text-amber-300">Mercados &amp; Locales:</p>
-          <p class="mb-2">Martes a Domingo: 09:30 - 20:30 hs.</p>
-          <p class="mb-1 font-bold text-amber-300">Puestos Callejeros y Snacks:</p>
-          <p class="mb-2">Viernes a Domingo: 11:30 - 22:30 hs.</p>
-          <p><span class="text-amber-300">◷</span> Lunes cerrado por reposición general.</p>
-        </div>
-      </div>
-      <div class="flex flex-row justify-between gap-2 border-t border-white/15 pt-4">
-        <p>© 2026 Gastronomía Barrio Chino (GBC). Todos los derechos reservados.</p>
-        <p>Proyecto realizado por Grupo 2 · UADE</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
+    <button id="back-to-top" type="button" aria-label="Volver arriba" aria-hidden="true"
+        class="fixed bottom-6 right-6 z-50 hidden flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-red-800 text-white shadow-lg transition-colors hover:bg-red-900 focus:outline-none">
+        <svg aria-hidden="true" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m0 0-6 6m6-6 6 6" />
+        </svg>
+    </button>
+    <script src="./script.js"></script>
 </body>
+
 </html>
