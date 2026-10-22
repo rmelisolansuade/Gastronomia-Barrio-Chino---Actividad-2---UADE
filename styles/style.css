@@ -11,3 +11,10 @@
 .card {
     width: 395px;
 }
+
+.field-error {
+  min-height: 0;
+  margin-top: 0.25rem;
+  color: #b91c1c;
+  font-size: 0.75rem;
+}
