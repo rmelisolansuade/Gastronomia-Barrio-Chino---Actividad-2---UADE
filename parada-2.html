@@ -202,6 +202,152 @@
                 </div>
             </div>
         </section>
+        <section id="reserva" class="bg-stone-100 px-6 py-14 sm:px-10 lg:px-16" data-stop-name="Ramen &amp; Omakase Lab"
+            data-stop-short="Ramen &amp; Omakase Lab" data-stop-number="02" data-open-hour="12" data-close-hour="23">
+            <div class="mx-auto max-w-5xl">
+                <header class="mx-auto mb-8 max-w-3xl text-center"><span
+                        class="inline-flex rounded-full bg-red-800 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">Sistema
+                        oficial de reservas</span>
+                    <h2
+                        class="mt-3 text-3xl font-extrabold uppercase leading-tight text-neutral-900 oswald-font sm:text-4xl">
+                        Reservá tu experiencia en <span data-reservation-stop-title>Ramen &amp; Omakase Lab</span></h2>
+                    <p class="mt-2 text-sm leading-6 text-stone-600">Asegurá tu lugar en esta experiencia gastronómica.
+                        La reserva cuesta <strong class="text-red-800">$5.000 ARS por persona</strong>. El importe podrá
+                        utilizarse posteriormente en consumiciones.</p>
+                </header>
+                <div class="grid items-start gap-6 lg:grid-cols-[1.35fr_0.9fr]">
+                    <form id="booking-form" class="rounded-xl border border-stone-200 bg-white p-5 shadow-xl sm:p-7"
+                        novalidate>
+                        <div class="mb-5 flex items-center justify-between border-b border-stone-200 pb-3">
+                            <h3 class="text-xl font-bold text-red-950 oswald-font">1. Configurar reserva</h3><span
+                                class="text-xs text-stone-500">Solicitud de reserva</span>
+                        </div>
+                        <div class="grid gap-4 sm:grid-cols-2">
+                            <div><label for="booking-name"
+                                    class="mb-1 block text-xs font-bold uppercase tracking-wide text-stone-800 oswald-font">Nombre
+                                    completo <span class="text-red-800" aria-hidden="true">*</span></label><input
+                                    id="booking-name" name="name" type="text" autocomplete="name" required minlength="5"
+                                    maxlength="80" placeholder="Ej: Ignacio Rossi" aria-describedby="booking-name-error"
+                                    class="block min-h-[42px] w-full rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-900 outline-none transition placeholder:text-stone-400 focus:border-red-800 focus:ring-2 focus:ring-red-800/15 aria-invalid:border-red-700">
+                                <p id="booking-name-error" class="mt-1 text-xs text-red-700" aria-live="polite"></p>
+                            </div>
+                            <div><label for="booking-email"
+                                    class="mb-1 block text-xs font-bold uppercase tracking-wide text-stone-800 oswald-font">Correo
+                                    electrónico <span class="text-red-800" aria-hidden="true">*</span></label><input
+                                    id="booking-email" name="email" type="email" autocomplete="email" required
+                                    maxlength="254" placeholder="ejemplo@correo.com"
+                                    aria-describedby="booking-email-error"
+                                    class="block min-h-[42px] w-full rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-900 outline-none transition placeholder:text-stone-400 focus:border-red-800 focus:ring-2 focus:ring-red-800/15 aria-invalid:border-red-700">
+                                <p id="booking-email-error" class="mt-1 text-xs text-red-700" aria-live="polite"></p>
+                            </div>
+                            <div><label for="booking-date"
+                                    class="mb-1 block text-xs font-bold uppercase tracking-wide text-stone-800 oswald-font">Fecha
+                                    de visita <span class="text-red-800" aria-hidden="true">*</span></label><input
+                                    id="booking-date" name="date" type="date" required
+                                    aria-describedby="booking-date-help booking-date-error"
+                                    class="block min-h-[42px] w-full rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-900 outline-none transition focus:border-red-800 focus:ring-2 focus:ring-red-800/15 aria-invalid:border-red-700">
+                                <p id="booking-date-help" class="mt-1 text-xs text-stone-500">Martes a domingo (lunes
+                                    cerrado).</p>
+                                <p id="booking-date-error" class="mt-1 text-xs text-red-700" aria-live="polite"></p>
+                            </div>
+                            <div><label for="booking-time"
+                                    class="mb-1 block text-xs font-bold uppercase tracking-wide text-stone-800 oswald-font">Horario
+                                    del turno <span class="text-red-800" aria-hidden="true">*</span></label><select
+                                    id="booking-time" name="time" required aria-describedby="booking-time-error"
+                                    class="block min-h-[42px] w-full rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-900 outline-none transition focus:border-red-800 focus:ring-2 focus:ring-red-800/15 aria-invalid:border-red-700">
+                                    <option value="">Seleccioná un horario</option>
+                                </select>
+                                <p id="booking-time-error" class="mt-1 text-xs text-red-700" aria-live="polite"></p>
+                            </div>
+                        </div>
+                        <div class="mt-5 rounded-lg border border-stone-200 bg-stone-50 p-4">
+                            <div class="grid gap-4 sm:grid-cols-2">
+                                <div><label for="booking-guests"
+                                        class="mb-1 block text-xs font-bold uppercase tracking-wide text-stone-800 oswald-font">Cantidad
+                                        de personas <span class="text-red-800" aria-hidden="true">*</span></label><input
+                                        id="booking-guests" name="guests" type="number" min="1" max="15" step="1"
+                                        value="2" required aria-describedby="booking-guests-help booking-guests-error"
+                                        class="block min-h-[42px] w-full rounded-md border border-stone-300 bg-white px-3 py-2 text-sm font-bold text-stone-900 outline-none transition focus:border-red-800 focus:ring-2 focus:ring-red-800/15 aria-invalid:border-red-700">
+                                    <p id="booking-guests-help" class="mt-1 text-xs text-stone-500">Capacidad máxima por
+                                        grupo: 15.</p>
+                                    <p id="booking-guests-error" class="mt-1 text-xs text-red-700" aria-live="polite">
+                                    </p>
+                                </div>
+                                <div><label for="booking-currency"
+                                        class="mb-1 block text-xs font-bold uppercase tracking-wide text-stone-800 oswald-font">Moneda
+                                        de pago <span class="text-red-800" aria-hidden="true">*</span></label><select
+                                        id="booking-currency" name="currency" required
+                                        aria-describedby="booking-currency-error"
+                                        class="block min-h-[42px] w-full rounded-md border border-stone-300 bg-white px-3 py-2 text-sm font-semibold text-stone-900 outline-none transition focus:border-red-800 focus:ring-2 focus:ring-red-800/15 aria-invalid:border-red-700">
+                                        <option value="ARS">ARS ($ Pesos argentinos)</option>
+                                        <option value="USD">USD (Dólares estadounidenses)</option>
+                                    </select>
+                                    <p id="booking-currency-error" class="mt-1 text-xs text-red-700" aria-live="polite">
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="mt-3 text-xs text-stone-500">Precio base fijo: $5.000 ARS por persona.</p>
+                        </div>
+                        <button type="submit"
+                            class="mt-5 flex min-h-[46px] w-full items-center justify-center gap-2 rounded-md bg-amber-400 px-4 py-3 text-sm font-extrabold uppercase tracking-wide text-stone-950 shadow-md transition-colors hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-red-800 focus:ring-offset-2 oswald-font"><span
+                                aria-hidden="true">✓</span> Confirmar solicitud de reserva</button>
+                        <p id="booking-status" class="mt-3 text-center text-sm" role="status" aria-live="polite"></p>
+                    </form>
+                    <aside class="rounded-xl bg-red-950 p-5 text-red-100 shadow-xl sm:p-6"
+                        aria-labelledby="booking-summary-title">
+                        <div class="mb-4 flex items-center justify-between gap-2 border-b border-white/15 pb-3">
+                            <h3 id="booking-summary-title"
+                                class="text-xl font-extrabold uppercase text-amber-300 oswald-font">Resumen de selección
+                            </h3>
+                        </div>
+                        <dl class="space-y-3 text-xs">
+                            <div class="flex justify-between gap-4 border-b border-white/10 pb-2">
+                                <dt class="text-red-200">Punto a visitar:</dt>
+                                <dd id="summary-stop" class="text-right font-bold uppercase text-white">02. Ramen &amp;
+                                    Omakase Lab</dd>
+                            </div>
+                            <div class="flex justify-between gap-4 border-b border-white/10 pb-2">
+                                <dt class="text-red-200">Fecha elegida:</dt>
+                                <dd id="summary-date" class="text-right font-bold text-white">A confirmar</dd>
+                            </div>
+                            <div class="flex justify-between gap-4 border-b border-white/10 pb-2">
+                                <dt class="text-red-200">Turno horario:</dt>
+                                <dd id="summary-time" class="text-right font-bold text-white">A confirmar</dd>
+                            </div>
+                            <div class="flex justify-between gap-4 border-b border-white/10 pb-2">
+                                <dt class="text-red-200">Comensales:</dt>
+                                <dd id="summary-guests" class="text-right font-bold text-white">2 personas</dd>
+                            </div>
+                            <div class="flex justify-between gap-4">
+                                <dt class="text-red-200">Precio base unitario:</dt>
+                                <dd id="summary-unit-price" class="text-right font-bold text-amber-200">$5.000 ARS</dd>
+                            </div>
+                        </dl>
+                        <div class="mt-4 rounded-lg border border-red-800 bg-black/20 p-4">
+                            <p class="text-[10px] font-bold uppercase tracking-wide text-red-200">Importe total a abonar
+                            </p>
+                            <div class="mt-1 flex flex-wrap items-end justify-between gap-2"><output id="summary-total"
+                                    class="text-3xl font-extrabold text-amber-400 oswald-font"
+                                    aria-live="polite">$10.000 ARS</output><span id="summary-currency-name"
+                                    class="text-[10px] uppercase text-red-100">Pesos argentinos</span></div>
+                        </div>
+                        <div id="exchange-details"
+                            class="mt-3 hidden rounded-md bg-white/10 p-3 text-xs leading-5 text-red-100"
+                            aria-live="polite">
+                            <p id="exchange-rate">Consultando cotización oficial...</p>
+                            <p id="exchange-date" class="mt-1"></p><a href="https://dolarapi.com/v1/dolares/oficial"
+                                target="_blank" rel="noopener noreferrer"
+                                class="mt-1 inline-block font-semibold text-amber-300 underline">Fuente: DolarApi (dólar
+                                oficial, venta)</a>
+                        </div>
+                        <ul class="mt-4 space-y-1 text-[11px] leading-4 text-red-100">
+                            <li>✓ Incluye degustación guiada y bebida típica.</li>
+                            <li>✓ Cancelación sin cargo hasta 4 horas antes del turno.</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="bg-red-950 text-sm text-red-200">
         <div class="mx-auto max-w-[1440px] px-16 py-8">
@@ -250,7 +396,8 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m0 0-6 6m6-6 6 6" />
         </svg>
     </button>
-    <script src="./script.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/booking.js"></script>
 </body>
 
 </html>
