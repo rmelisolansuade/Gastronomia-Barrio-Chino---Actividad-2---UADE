@@ -15,8 +15,7 @@ if (bookingForm) {
   const stopName = bookingSection.dataset.stopName;
   const stopShort = bookingSection.dataset.stopShort;
   const stopNumber = bookingSection.dataset.stopNumber;
-  const openMinutes = Number(bookingSection.dataset.openHour) * 60;
-  const closeMinutes = Number(bookingSection.dataset.closeHour) * 60;
+  const bookingHours = JSON.parse(bookingSection.dataset.bookingHours);
   let exchangeRate = null;
   let exchangeReferenceDate = "";
   let exchangeLoadFailed = false;
@@ -56,17 +55,20 @@ if (bookingForm) {
 
     const [year, month, day] = selectedDate.split("-").map(Number);
     const weekday = new Date(year, month - 1, day).getDay();
-    if (weekday === 1) {
-      bookingTime.replaceChildren(new Option("Cerrado los lunes", ""));
+    const intervals = bookingHours[weekday] ?? [];
+    if (!intervals.length) {
+      bookingTime.replaceChildren(new Option("Cerrado ese día", ""));
       return;
     }
 
-    for (let minutes = openMinutes; minutes < closeMinutes; minutes += 30) {
-      const hour = String(Math.floor(minutes / 60) % 24).padStart(2, "0");
-      const minute = String(minutes % 60).padStart(2, "0");
-      const time = `${hour}:${minute}`;
-      bookingTime.add(new Option(`${time} hs`, time));
-    }
+    intervals.forEach(([openMinutes, closeMinutes]) => {
+      for (let minutes = openMinutes; minutes < closeMinutes; minutes += 30) {
+        const hour = String(Math.floor(minutes / 60) % 24).padStart(2, "0");
+        const minute = String(minutes % 60).padStart(2, "0");
+        const time = `${hour}:${minute}`;
+        bookingTime.add(new Option(`${time} hs`, time));
+      }
+    });
   };
 
   const updateSummary = () => {
@@ -122,7 +124,7 @@ if (bookingForm) {
       else if (value < todayLocal()) error = "La fecha no puede ser anterior a hoy.";
       else {
         const [year, month, day] = value.split("-").map(Number);
-        if (new Date(year, month - 1, day).getDay() === 1) error = "Este local permanece cerrado los lunes.";
+        if (!(bookingHours[new Date(year, month - 1, day).getDay()] ?? []).length) error = "Este local permanece cerrado ese día.";
       }
     }
     if (name === "time") {
