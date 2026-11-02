@@ -19,6 +19,37 @@
   font-size: 0.75rem;
 }
 
+#preguntas-frecuentes summary {
+  border-radius: 0.25rem;
+}
+
+#preguntas-frecuentes summary:focus-visible {
+  outline: 3px solid #b45309;
+  outline-offset: 4px;
+}
+
+#preguntas-frecuentes .faq-answer.is-animating {
+  animation: faq-answer-reveal 220ms ease-out both;
+}
+
+@keyframes faq-answer-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-0.4rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #preguntas-frecuentes .faq-answer.is-animating {
+    animation: none;
+  }
+}
+
 html,
 body {
   width: 100%;

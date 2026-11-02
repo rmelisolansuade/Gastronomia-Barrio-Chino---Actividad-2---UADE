@@ -33,6 +33,19 @@ document.querySelectorAll(".site-navigation").forEach((navigation) => {
   });
 });
 
+document.querySelectorAll("#preguntas-frecuentes details").forEach((item) => {
+  item.addEventListener("toggle", () => {
+    if (!item.open) return;
+
+    const answer = item.querySelector(".faq-answer");
+    if (!answer || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    answer.classList.remove("is-animating");
+    void answer.offsetWidth;
+    answer.classList.add("is-animating");
+  });
+});
+
 const backToTop = document.getElementById("back-to-top");
 
 if (backToTop) {
