@@ -21,6 +21,23 @@
 
 #preguntas-frecuentes summary {
   border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+#preguntas-frecuentes summary::-webkit-details-marker {
+  display: none;
+}
+
+#preguntas-frecuentes summary::before {
+  content: ">";
+  transition: transform 160ms ease;
+}
+
+#preguntas-frecuentes details[open] summary::before {
+  transform: rotate(90deg);
 }
 
 #preguntas-frecuentes summary:focus-visible {
